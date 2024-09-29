@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes example {
+            0% {
+                background-color: red;
+                transform: translateY(0);
+            }
+            50% {
+                background-color: yellow;
+                transform: translateY(50px);
+            }
+            100% {
+                background-color: green;
+                transform: translateY(0);
+            }
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            animation: example 2s infinite; /* 애니메이션 이름, 지속 시간, 반복 여부 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

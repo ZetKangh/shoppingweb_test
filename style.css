@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    
     box-sizing: border-box;
+
 }
 
 li {
@@ -12,7 +13,7 @@ li {
 a {
     text-decoration: none;
     color: black;
-    display: black;
+    display: block;
 }
 
 .box {
@@ -33,16 +34,86 @@ a {
     width: 200px;
     height: 80px;
 }
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
 
 .menu {
     width: 500px;
     height: 100px;
+    display: flex;
+    align-items: center;
 }
+.menu li{
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.menu li:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 .slide {
     width: 1200px;
     height: 300px;
+    font-size: 0;
+
+    overflow: hidden;
 }
+.slide li{
+    animation: slide 6s infinite;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-0px);
+    }
+    33%{
+        transform: translateY(-300px);
+    }
+    66%{
+        transform: translateY(-600px);
+    }
+    100%{
+        transform: translateY(-0px);
+    }
+}
+.slide img{
+    width: 1200px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .contents {
     width: 1200px;
@@ -53,31 +124,67 @@ a {
 .notice {
     width: 400px;
     height: 200px;
+
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    
+}
+.notice li{
+    margin-top: 13px;
+    font-size: 17px;
+    border-bottom: 1px dotted #ccc;
 }
 
 .banner {
     width: 400px;
     height: 200px;
 }
-
-.baro {
+.banner img{
     width: 400px;
     height: 200px;
 }
+
+.shortcut {
+    width: 400px;
+    height: 200px;
+}
+.shortcut img{
+    width: 400px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
 
 .footer {
     width: 1200px;
     height: 100px;
     display: flex;
     align-items: center;
+    background-color: #ccc;
 }
 
 .copy {
     width: 800px;
     height: 100px;
+    padding-top: 20px;
+    text-align: center;
 }
 
 .sns {
     width: 200px;
     height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sns li img{
+    width: 60px;
+    height: 60px; 
 }
